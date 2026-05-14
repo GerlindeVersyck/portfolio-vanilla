@@ -1,0 +1,128 @@
+{
+  "header": {
+    "logo": "Mon Portfolio",
+    "nav": ["Accueil", "À propos", "Compétences", "Langues", "Projets", "Contact"],
+    "languageSwitcher": {
+      "title": "Changer de langue",
+      "ariaLabel": "Sélectionner la langue"
+    }
+  },
+  "hero": {
+    "title": "Créer des expériences numériques incroyables",
+    "name": "Gerlinde Versyck - Business & Web Applications | Full-Stack Developer",
+    "avatarAlt": "Avatar d'une femme aux cheveux bruns"
+  },
+  "codePhrase": {
+    "lineParts": [
+      "<span class=\"phrase-word phrase-spin-in phrase-spin-a\">Code</span>",
+      "<span class=\"phrase-word phrase-spin-in phrase-spin-b\">propre.</span>",
+      "<span class=\"phrase-word phrase-human\">Expériences</span>",
+      "<span class=\"phrase-word phrase-human\">humaines.</span>",
+      "<span class=\"phrase-word phrase-accent\">Construit</span>",
+      "<span class=\"phrase-word phrase-accent phrase-rotate\">avec</span>",
+      "<span class=\"phrase-word phrase-accent\">but.</span>"
+    ],
+    "subline": "<span class=\"subline-part\">Interfaces accessibles.</span><span class=\"subline-separator\">•</span><span class=\"subline-part\">Architecture maintenable.</span><span class=\"subline-separator\">•</span><span class=\"subline-part\">Détails numériques réfléchis.</span>"
+  },
+  "about": {
+    "title": "À propos",
+    "paragraphs": [
+      "Je suis une développeuse web axée sur la création d'expériences accessibles et maintenables. Je travaille avec HTML5, CSS3 et JavaScript vanilla, en mettant l'accent sur la qualité du code et l'expérience utilisateur.",
+      "Je suis passionnée par le code propre et j'applique des principes comme SOLID, KISS et DRY dans mes projets. Je crois à l'importance du HTML sémantique, du design responsive et de l'accessibilité web pour créer des applications utilisables par tous.",
+      "De plus, je suis intéressée par l'apprentissage continu de nouvelles technologies et des meilleures pratiques pour progresser en tant que développeuse professionnelle."
+    ]
+  },
+  "skills": {
+    "title": "Compétences",
+    "intro": "Je travaille avec une base solide en mise en page, styles responsifs et logique en JavaScript vanilla, en maintenant un code clair et facile à maintenir.",
+    "items": [
+      { "description": "Je structure des pages web sémantiques, accessibles et bien organisées." },
+      { "description": "Je crée des styles modernes, cohérents et faciles à maintenir." },
+      {
+        "description": "Je développe l'interactivité et une logique claire avec JavaScript vanilla."
+      },
+      {
+        "description": "Je gère le contrôle de version et collabore sur des projets en utilisant Git."
+      },
+      { "description": "Je conçois des interfaces adaptables pour mobile, tablette et bureau." },
+      { "description": "J'écris un code propre, lisible et axé sur les meilleures pratiques." }
+    ]
+  },
+  "projects": {
+    "title": "Projets",
+    "githubTooltip": "Voir sur GitHub",
+    "githubAriaLabel": "Voir le projet sur GitHub",
+    "cards": [
+      {
+        "title": "Projet 1 : Mon Portfolio Personnel",
+        "description": "Un portfolio personnel développé avec HTML, CSS et JavaScript, axé sur l’accessibilité, le design responsive et un code maintenable.",
+        "alt": "Aperçu du projet de portfolio personnel"
+      },
+      {
+        "title": "Projet 2 : Composants avec React et Stencil",
+        "description": "Une collection de composants réutilisables développés avec React et Stencil, conçus pour des interfaces modernes et évolutives.",
+        "alt": "Aperçu du projet React et Stencil"
+      },
+      {
+        "title": "Projet 3 : Microfrontends et Microservices",
+        "description": "Une architecture modulaire pensée pour la scalabilité, intégrant un frontend découplé et des services indépendants.",
+        "alt": "Aperçu du projet de microfrontends et microservices"
+      }
+    ]
+  },
+  "languages": {
+    "switcher": {
+      "nl": "Nederlands",
+      "en": "English",
+      "fr": "Français",
+      "es": "Español"
+    },
+    "title": "Langues Parlées",
+    "intro": "Aisance en plusieurs langues",
+    "items": {
+      "nl": "Néerlandais",
+      "en": "Anglais",
+      "fr": "Français",
+      "es": "Espagnol"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Vous souhaitez discuter d’un projet, d’une collaboration ou d’une opportunité ? Envoyez-moi un message et je vous répondrai dès que possible.",
+    "openButton": "Ouvrir le formulaire de contact",
+    "closeLabel": "Fermer le formulaire de contact",
+    "nameLabel": "Nom",
+    "emailLabel": "E-mail",
+    "messageLabel": "Message",
+    "namePlaceholder": "Votre nom complet",
+    "emailPlaceholder": "votre.email@exemple.fr",
+    "messagePlaceholder": "Votre message ici...",
+    "submit": "Envoyer le message",
+    "submitTooltip": "Envoyez votre message à moi",
+    "successCloseButton": "Fermer",
+    "validation": {
+      "name": {
+        "required": "Le nom est obligatoire",
+        "minLength": "Le nom doit contenir au moins 3 caractères"
+      },
+      "email": {
+        "required": "L’e-mail est obligatoire",
+        "invalid": "Veuillez saisir une adresse e-mail valide"
+      },
+      "message": {
+        "required": "Le message est obligatoire",
+        "minLength": "Le message doit contenir au moins 10 caractères"
+      }
+    },
+    "feedback": {
+      "invalid": "Veuillez remplir correctement tous les champs.",
+      "sending": "Envoi en cours...",
+      "successTitle": "Message envoyé",
+      "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible.",
+      "error": "Une erreur est survenue lors de l’envoi de votre message. Veuillez réessayer."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Gerlinde Versyck. Tous droits réservés."
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "header": {
+    "logo": "Mijn portfolio",
+    "nav": ["Home", "Over mij", "Vaardigheden", "Talen", "Projecten", "Contact"],
+    "languageSwitcher": {
+      "title": "Taal wijzigen",
+      "ariaLabel": "Kies een taal"
+    }
+  },
+  "hero": {
+    "title": "Ik bouw digitale ervaringen die werken én blijven hangen",
+    "name": "Gerlinde Versyck - Business & Web Applications | Full-Stack Developer",
+    "avatarAlt": "Portret van een vrouw met bruin haar"
+  },
+  "codePhrase": {
+    "lineParts": [
+      "<span class=\"phrase-word phrase-spin-in phrase-spin-a\">Sterke</span>",
+      "<span class=\"phrase-word phrase-spin-in phrase-spin-b\">code.</span>",
+      "<span class=\"phrase-word phrase-human\">Menselijke</span>",
+      "<span class=\"phrase-word phrase-human\">ervaringen.</span>",
+      "<span class=\"phrase-word phrase-accent\">Gebouwd</span>",
+      "<span class=\"phrase-word phrase-accent phrase-rotate\">met</span>",
+      "<span class=\"phrase-word phrase-accent\">aandacht.</span>"
+    ],
+    "subline": "<span class=\"subline-part\">Toegankelijke interfaces.</span><span class=\"subline-separator\">•</span><span class=\"subline-part\">Onderhoudbare architectuur.</span><span class=\"subline-separator\">•</span><span class=\"subline-part\">Doordachte digitale details.</span>"
+  },
+  "about": {
+    "title": "Over mij",
+    "paragraphs": [
+      "Ik ben webdeveloper en focus op toegankelijke, onderhoudbare en gebruiksvriendelijke digitale oplossingen. Ik werk met HTML5, CSS3 en vanilla JavaScript, met veel aandacht voor codekwaliteit en gebruikservaring.",
+      "Ik hou van nette, duidelijke code en pas principes zoals SOLID, KISS en DRY toe waar dat zinvol is. Voor mij zijn semantische HTML, responsive design en webtoegankelijkheid geen extra's, maar een vanzelfsprekend onderdeel van goed werk.",
+      "Daarnaast leer ik graag bij. Ik blijf mezelf verdiepen in nieuwe technologieën, betere werkwijzen en praktische oplossingen om verder te groeien als developer."
+    ]
+  },
+  "skills": {
+    "title": "Vaardigheden",
+    "intro": "Ik werk vanuit een sterke basis in structuur, responsive styling en logica in vanilla JavaScript, met code die duidelijk, onderhoudbaar en doordacht is.",
+    "items": [
+      {
+        "description": "Ik bouw semantische, toegankelijke en overzichtelijke webpagina's."
+      },
+      {
+        "description": "Ik maak moderne, consistente en onderhoudbare stijlen."
+      },
+      {
+        "description": "Ik ontwikkel interactieve features en heldere logica met vanilla JavaScript."
+      },
+      {
+        "description": "Ik werk met versiebeheer in Git en ondersteun een vlotte samenwerking binnen projecten."
+      },
+      {
+        "description": "Ik ontwerp interfaces die goed werken op mobiel, tablet en desktop."
+      },
+      {
+        "description": "Ik schrijf verzorgde, leesbare code met aandacht voor kwaliteit en best practices."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projecten",
+    "githubTooltip": "Bekijk op GitHub",
+    "githubAriaLabel": "Bekijk project op GitHub",
+    "cards": [
+      {
+        "title": "Project 1: Mijn persoonlijke portfolio",
+        "description": "Een persoonlijk portfolio gebouwd met HTML, CSS en JavaScript, met aandacht voor toegankelijkheid, responsive design en onderhoudbare code.",
+        "alt": "Voorbeeld van mijn persoonlijke portfolio"
+      },
+      {
+        "title": "Project 2: Componenten met React en Stencil",
+        "description": "Een verzameling herbruikbare componenten gebouwd met React en Stencil, ontworpen voor moderne en schaalbare gebruikersinterfaces.",
+        "alt": "Voorbeeld van een project met React en Stencil"
+      },
+      {
+        "title": "Project 3: Microfrontends en microservices",
+        "description": "Een modulaire architectuur met focus op schaalbaarheid, met een ontkoppelde frontend en onafhankelijke services.",
+        "alt": "Voorbeeld van een project met microfrontends en microservices"
+      }
+    ]
+  },
+  "languages": {
+    "switcher": {
+      "nl": "Nederlands",
+      "en": "English",
+      "fr": "Français",
+      "es": "Español"
+    },
+    "title": "Talen",
+    "intro": "Ik spreek en werk in meerdere talen.",
+    "items": {
+      "nl": "Nederlands",
+      "en": "Engels",
+      "fr": "Frans",
+      "es": "Spaans"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Wil je samenwerken, een project bespreken of gewoon even kennismaken? Stuur me gerust een bericht. Ik neem zo snel mogelijk contact met je op.",
+    "openButton": "Open contactformulier",
+    "closeLabel": "Sluit contactformulier",
+    "nameLabel": "Naam",
+    "emailLabel": "E-mail",
+    "messageLabel": "Bericht",
+    "namePlaceholder": "Je volledige naam",
+    "emailPlaceholder": "jouw.email@voorbeeld.nl",
+    "messagePlaceholder": "Typ hier je bericht...",
+    "submit": "Bericht versturen",
+    "submitTooltip": "Verstuur je bericht",
+    "successCloseButton": "Sluiten",
+    "validation": {
+      "name": {
+        "required": "Naam is verplicht.",
+        "minLength": "Naam moet minstens 3 tekens bevatten."
+      },
+      "email": {
+        "required": "E-mail is verplicht.",
+        "invalid": "Voer een geldig e-mailadres in."
+      },
+      "message": {
+        "required": "Bericht is verplicht.",
+        "minLength": "Bericht moet minstens 10 tekens bevatten."
+      }
+    },
+    "feedback": {
+      "invalid": "Vul alle velden correct in.",
+      "sending": "Bericht wordt verzonden...",
+      "successTitle": "Bericht verzonden",
+      "successMessage": "Je bericht is goed aangekomen. Ik neem zo snel mogelijk contact met je op.",
+      "error": "Er ging iets mis bij het verzenden van je bericht. Probeer het later opnieuw."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Gerlinde Versyck. Alle rechten voorbehouden."
+  }
+}
