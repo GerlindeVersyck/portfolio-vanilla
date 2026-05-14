@@ -1,0 +1,97 @@
+.site-footer {
+  position: relative;
+  background:
+    radial-gradient(circle at top left, rgba(96, 165, 250, 0.1), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.1), transparent 40%),
+    linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+  opacity: 0.5;
+}
+
+.footer-inner {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-copyright {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-width: 80px;
+  justify-content: center;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+}
+
+.footer-link:hover .footer-icon {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.link-text {
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover .link-text {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.footer-link:hover .footer-icon {
+  opacity: 1;
+  transform: scale(1);
+  background: var(--hero-name-gradient);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
+}
+
+.footer-link:hover {
+  color: #60a5fa;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.6);
+  filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.5));
+}
