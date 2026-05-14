@@ -1,0 +1,276 @@
+.about {
+  position: relative;
+  z-index: 1;
+  padding: 14rem 0 8rem;
+  background: var(--bg-dark);
+}
+
+.about-layout,
+.about-top-phases,
+.about-bottom-phases,
+.parallax-frame {
+  position: relative;
+}
+
+.about-top-phases,
+.about-bottom-phases {
+  width: 100%;
+}
+
+.phase-1 {
+  min-height: 240vh;
+}
+
+.phase-2,
+.phase-3 {
+  min-height: 180vh;
+}
+
+.phase-4 {
+  min-height: 160vh;
+}
+
+.about-top-sticky,
+.about-bottom-sticky {
+  position: sticky;
+}
+
+.phase-1-sticky {
+  top: 2.5rem;
+}
+
+.phase-2-sticky {
+  top: 6.5rem;
+}
+
+.phase-3-sticky {
+  top: 5rem;
+}
+
+.phase-4-sticky {
+  top: 9rem;
+}
+
+.about-top-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: start;
+  gap: 2.5rem;
+  padding-top: 4rem;
+}
+
+.about-text {
+  position: relative;
+  z-index: 3;
+  max-width: 40rem;
+  padding-bottom: 1.5rem;
+}
+
+.about-text .section-title {
+  margin-bottom: 1.5rem;
+  padding-top: 4rem;
+  text-align: left;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.about-image-vertical,
+.about-image-horizontal {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.5);
+}
+
+.about-image-vertical {
+  width: 100%;
+  min-height: 36rem;
+  margin-bottom: 2.25rem;
+}
+
+.about-image-horizontal {
+  width: 100%;
+  height: 40rem;
+}
+
+.about-bottom-phases {
+  margin-top: 1.5rem;
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  will-change: transform;
+}
+
+.about-image-vertical .parallax-image {
+  top: -30%;
+  height: 162%;
+  background-position: center 42%;
+  transform: translate3d(0, 0, 0) scale(1.06);
+}
+
+.about-image-horizontal .parallax-image {
+  top: -48%;
+  height: 196%;
+  background-position: center 50%;
+  transform: translate3d(0, 0, 0) scale(1.14);
+}
+
+.about .about-text,
+.about .about-image-vertical,
+.about .about-image-horizontal {
+  transition:
+    opacity 0.35s ease,
+    filter 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.about.about--phase-1 .about-text {
+  opacity: 1;
+}
+
+.about.about--phase-1 .about-image-vertical {
+  opacity: 1;
+  filter: brightness(1.06) saturate(1.04);
+  border-color: rgba(96, 165, 250, 0.4);
+}
+
+.about.about--phase-1 .about-image-horizontal {
+  opacity: 0.88;
+  filter: brightness(0.9) saturate(0.92);
+}
+
+.about.about--phase-2 .about-text {
+  opacity: 0.96;
+}
+
+.about.about--phase-2 .about-image-vertical {
+  opacity: 0.92;
+  filter: brightness(0.97) saturate(0.96);
+}
+
+.about.about--phase-2 .about-image-horizontal {
+  opacity: 0.94;
+  filter: brightness(0.98) saturate(0.98);
+}
+
+.about.about--phase-3 .about-text {
+  opacity: 0.9;
+}
+
+.about.about--phase-3 .about-image-vertical {
+  opacity: 0.82;
+  filter: brightness(0.9) saturate(0.92);
+}
+
+.about.about--phase-3 .about-image-horizontal {
+  opacity: 1;
+  filter: brightness(1.08) saturate(1.06);
+  border-color: rgba(16, 185, 129, 0.42);
+}
+
+.about.about--phase-4 .about-text {
+  opacity: 0.85;
+}
+
+.about.about--phase-4 .about-image-vertical {
+  opacity: 0.76;
+  filter: brightness(0.86) saturate(0.88);
+}
+
+.about.about--phase-4 .about-image-horizontal {
+  opacity: 1;
+  filter: brightness(1.12) saturate(1.08);
+  border-color: rgba(245, 158, 11, 0.46);
+}
+
+@media (max-width: 992px) {
+  .about {
+    padding: 8rem 0 4rem;
+  }
+
+  .phase-1,
+  .phase-2,
+  .phase-3,
+  .phase-4 {
+    min-height: auto;
+  }
+
+  .about-top-sticky,
+  .about-bottom-sticky {
+    position: relative;
+    top: auto;
+  }
+
+  .about-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-text {
+    max-width: none;
+    padding-bottom: 0;
+  }
+
+  .about-text .section-title {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .about-image-vertical {
+    min-height: 30rem;
+    margin-bottom: 0;
+  }
+
+  .about-bottom-phases {
+    margin-top: 2rem;
+  }
+
+  .about-image-horizontal {
+    height: 24rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 6rem 0 4rem;
+  }
+
+  .about-text p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .about-image-vertical {
+    min-height: 26rem;
+  }
+
+  .about-image-horizontal {
+    height: 18rem;
+  }
+
+  .about-image-horizontal .parallax-image {
+    top: -25%;
+    height: 150%;
+    background-position: center 50%;
+  }
+
+  .about-image-vertical .parallax-image {
+    top: -18%;
+    height: 138%;
+    background-position: center 40%;
+  }
+}
