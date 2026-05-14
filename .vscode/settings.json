@@ -1,0 +1,17 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "prettier.requireConfig": false,
+  "prettier.useEditorConfig": false,
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.trailingComma": "es5",
+  "prettier.arrowParens": "always",
+  "prettier.printWidth": 100,
+  "prettier.endOfLine": "lf"
+}
