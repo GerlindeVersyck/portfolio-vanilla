@@ -1,0 +1,124 @@
+{
+  "header": {
+    "logo": "My Portfolio",
+    "nav": ["Home", "About", "Skills", "Languages", "Projects", "Contact"],
+    "languageSwitcher": {
+      "title": "Change Language",
+      "ariaLabel": "Select language"
+    }
+  },
+  "hero": {
+    "title": "Creating incredible digital experiences",
+    "name": "Gerlinde Versyck - Business & Web Applications | Full-Stack Developer",
+    "avatarAlt": "Avatar of a woman with brown hair"
+  },
+  "codePhrase": {
+    "lineParts": [
+      "<span class=\"phrase-word phrase-spin-in phrase-spin-a\">Clean</span>",
+      "<span class=\"phrase-word phrase-spin-in phrase-spin-b\">code.</span>",
+      "<span class=\"phrase-word phrase-human\">Human</span>",
+      "<span class=\"phrase-word phrase-human\">experiences.</span>",
+      "<span class=\"phrase-word phrase-accent\">Built</span>",
+      "<span class=\"phrase-word phrase-accent phrase-rotate\">with</span>",
+      "<span class=\"phrase-word phrase-accent\">purpose.</span>"
+    ],
+    "subline": "<span class=\"subline-part\">Accessible interfaces.</span><span class=\"subline-separator\">•</span><span class=\"subline-part\">Maintainable architecture.</span><span class=\"subline-separator\">•</span><span class=\"subline-part\">Thoughtful digital details.</span>"
+  },
+  "about": {
+    "title": "About",
+    "paragraphs": [
+      "I'm a web developer focused on creating accessible and maintainable experiences. I work with HTML5, CSS3 and vanilla JavaScript, emphasizing code quality and user experience.",
+      "I'm passionate about clean code and apply principles like SOLID, KISS and DRY in my projects. I believe in the importance of semantic HTML, responsive design and web accessibility to create applications usable by everyone.",
+      "Furthermore, I'm interested in continuously learning new technologies and best practices to grow as a professional developer."
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "intro": "I work with a solid foundation in layout, responsive styles and logic in vanilla JavaScript, maintaining clear and easy to maintain code.",
+    "items": [
+      { "description": "I structure semantic, accessible and well-organized web pages." },
+      { "description": "I create modern, consistent and easy to maintain styles." },
+      { "description": "I develop interactivity and clear logic with vanilla JavaScript." },
+      { "description": "I manage version control and collaborate on projects using Git." },
+      { "description": "I design interfaces adaptable for mobile, tablet and desktop." },
+      { "description": "I write clean, readable code focused on best practices." }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "githubTooltip": "View on GitHub",
+    "githubAriaLabel": "View project on GitHub",
+    "cards": [
+      {
+        "title": "Project 1: My Personal Portfolio",
+        "description": "A personal portfolio built with HTML, CSS and JavaScript, focused on accessibility, responsive design and maintainable code.",
+        "alt": "Preview of the personal portfolio project"
+      },
+      {
+        "title": "Project 2: Components with React and Stencil",
+        "description": "A collection of reusable components built with React and Stencil, designed for modern and scalable user interfaces.",
+        "alt": "Preview of the React and Stencil project"
+      },
+      {
+        "title": "Project 3: Microfrontends and Microservices",
+        "description": "A modular architecture focused on scalability, combining a decoupled frontend with independent services.",
+        "alt": "Preview of the microfrontends and microservices project"
+      }
+    ]
+  },
+  "languages": {
+    "switcher": {
+      "nl": "Nederlands",
+      "en": "English",
+      "fr": "Français",
+      "es": "Español"
+    },
+    "title": "Spoken Languages",
+    "intro": "Fluency in multiple languages",
+    "items": {
+      "nl": "Dutch",
+      "en": "English",
+      "fr": "French",
+      "es": "Spanish"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Do you want to discuss a project, collaboration or opportunity? Send me a message and I’ll get back to you as soon as possible.",
+    "openButton": "Open contact form",
+    "closeLabel": "Close contact form",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "your.email@example.com",
+    "messagePlaceholder": "Your message here...",
+    "submit": "Send Message",
+    "submitTooltip": "Send your message to me",
+    "successCloseButton": "Close",
+    "validation": {
+      "name": {
+        "required": "Name is required",
+        "minLength": "Name must contain at least 3 characters"
+      },
+      "email": {
+        "required": "Email is required",
+        "invalid": "Please enter a valid email address"
+      },
+      "message": {
+        "required": "Message is required",
+        "minLength": "Message must contain at least 10 characters"
+      }
+    },
+    "feedback": {
+      "invalid": "Please complete all fields correctly.",
+      "sending": "Sending...",
+      "successTitle": "Message sent",
+      "successMessage": "Your message has been sent successfully. I will reply as soon as possible.",
+      "error": "Something went wrong while sending your message. Please try again."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Gerlinde Versyck. All rights reserved."
+  }
+}
