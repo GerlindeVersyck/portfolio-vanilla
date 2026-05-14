@@ -1,0 +1,319 @@
+.code-phrase {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: -2.5rem;
+  padding: 5.5rem var(--spacing-unit) 3.5rem;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.96) 0%, rgba(2, 6, 23, 1) 100%);
+  border-top: 1px solid rgba(96, 165, 250, 0.12);
+  border-bottom: 1px solid rgba(96, 165, 250, 0.12);
+  text-align: left;
+}
+
+.code-phrase::before,
+.code-phrase::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.code-phrase::before {
+  left: 8%;
+  bottom: -3rem;
+  width: 14rem;
+  height: 14rem;
+  background: radial-gradient(circle, rgba(96, 165, 250, 0.16), transparent 70%);
+  animation: codeGlowLeft 8s ease-in-out infinite;
+}
+
+.code-phrase::after {
+  top: -3rem;
+  right: 10%;
+  width: 12rem;
+  height: 12rem;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.16), transparent 70%);
+  animation: codeGlowRight 9s ease-in-out infinite;
+}
+
+.code-phrase-container {
+  position: relative;
+  z-index: 1;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+.code-phrase-line {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  white-space: nowrap;
+  font-size: clamp(1rem, 1.35vw, 1.35rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.code-phrase-line .phrase-word {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.96);
+  will-change: transform;
+}
+
+.code-phrase-line .phrase-human {
+  color: #f9a8d4;
+  animation: humanGlow 5s ease-in-out infinite;
+}
+
+.code-phrase-line .phrase-word:not(.phrase-spin-in):not(.phrase-accent):not(.phrase-rotate) {
+  animation: wordFloat 3s ease-in-out infinite;
+}
+
+.code-phrase-line .phrase-word:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.code-phrase-line .phrase-word:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.code-phrase-line .phrase-word:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.code-phrase-line .phrase-word:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.code-phrase-line .phrase-word:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.code-phrase-line .phrase-word:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.code-phrase-line .phrase-word:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+.code-phrase-line .phrase-spin-in {
+  transform-origin: center center;
+  will-change: transform, opacity, filter;
+  animation: spinAlternate 30s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.code-phrase-line .phrase-spin-a {
+  animation-delay: 0s;
+}
+
+.code-phrase-line .phrase-spin-b {
+  animation-delay: 0.2s;
+}
+
+.code-phrase-line .phrase-accent {
+  background: linear-gradient(90deg, #60a5fa, #818cf8, #a78bfa, #60a5fa);
+  background-position: 0% 50%;
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  will-change: transform, background-position, filter;
+  animation:
+    accentGlow 2.8s ease-in-out infinite,
+    gradientShift 3s linear infinite;
+}
+
+.code-phrase-line .phrase-rotate {
+  transform-origin: center center;
+  will-change: transform;
+  animation:
+    phraseRotateSoft 2.4s ease-in-out infinite,
+    accentGlow 2.8s ease-in-out infinite,
+    gradientShift 3s linear infinite !important;
+}
+
+.code-phrase-subline {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 0.85rem;
+  white-space: nowrap;
+  color: var(--text-light);
+  opacity: 0.92;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.5;
+}
+
+.code-phrase-subline .subline-part {
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+@keyframes humanGlow {
+  0%,
+  100% {
+    color: #fbcfe8;
+    text-shadow: 0 0 0 rgba(244, 114, 182, 0);
+  }
+
+  50% {
+    color: #f9a8d4;
+    text-shadow: 0 0 14px rgba(244, 114, 182, 0.22);
+  }
+}
+
+@keyframes wordFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes spinAlternate {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  8% {
+    transform: rotate(-540deg) scale(0.78);
+    opacity: 0.4;
+    filter: blur(4px);
+  }
+
+  16% {
+    transform: rotate(-180deg) scale(1.1);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  20% {
+    transform: rotate(10deg) scale(1.02);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  24%,
+  40%,
+  56% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  64% {
+    transform: rotate(540deg) scale(0.78);
+    opacity: 0.4;
+    filter: blur(4px);
+  }
+
+  72% {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  76% {
+    transform: rotate(-10deg) scale(1.02);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  80%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes phraseRotateSoft {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(14deg) scale(1.12);
+  }
+}
+
+@keyframes accentGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0 rgba(96, 165, 250, 0));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 12px rgba(96, 165, 250, 0.45));
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes codeGlowLeft {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(1.2rem, -0.8rem) scale(1.08);
+  }
+}
+
+@keyframes codeGlowRight {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-1rem, 1rem) scale(1.06);
+  }
+}
+
+@media (max-width: 900px) {
+  .code-phrase-line,
+  .code-phrase-subline {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 640px) {
+  .code-phrase {
+    margin-top: -1.5rem;
+    padding: 4rem var(--spacing-unit) 2.75rem;
+  }
+
+  .code-phrase-line {
+    gap: 0.25rem 0.4rem;
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+  }
+
+  .code-phrase-subline {
+    gap: 0.4rem 0.75rem;
+    font-size: 0.95rem;
+  }
+}
