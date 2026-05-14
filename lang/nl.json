@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Gerlinde Versyck – Frontend Developer",
+    "description": "Portfolio van Gerlinde Versyck, een gepassioneerde frontend developer die responsieve webapplicaties bouwt."
+  },
+  "nav": {
+    "about": "Over mij",
+    "skills": "Vaardigheden",
+    "projects": "Projecten",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hoi, ik ben",
+    "role": "Frontend Developer",
+    "description": "Ik maak mooie, responsieve webervaringen met schone code en doordacht ontwerp.",
+    "cta": {
+      "projects": "Bekijk Projecten",
+      "contact": "Neem Contact Op"
+    }
+  },
+  "about": {
+    "title": "Over mij",
+    "p1": "Ik ben een gepassioneerde frontend developer met een liefde voor het maken van elegante, gebruiksvriendelijke webapplicaties.",
+    "p2": "Met ervaring in moderne webtechnologieën focus ik me op het leveren van hoogwaardige, performante oplossingen die gebruikers verrukken.",
+    "location": "Locatie",
+    "availability": "Beschikbaarheid",
+    "available": "Beschikbaar",
+    "cta": "Laten we praten",
+    "stat": {
+      "experience": "Jaar Ervaring",
+      "projects": "Afgeronde Projecten",
+      "clients": "Tevreden Klanten"
+    }
+  },
+  "skills": {
+    "title": "Vaardigheden",
+    "frontend": "Frontend",
+    "tools": "Tools & Frameworks"
+  },
+  "projects": {
+    "title": "Projecten",
+    "demo": "Demo",
+    "code": "Code",
+    "project1": {
+      "title": "Portfoliosite",
+      "desc": "Een responsieve one-page portfolio gebouwd met vanilla HTML, CSS en JavaScript, met animaties en i18n-ondersteuning."
+    },
+    "project2": {
+      "title": "Weer App",
+      "desc": "Een interactief weer-dashboard dat live gegevens ophaalt van een openbare API en geanimeerde voorspellingen toont."
+    },
+    "project3": {
+      "title": "Taakbeheer",
+      "desc": "Een functierijke taakbeheerapp met drag-and-drop, lokale opslag en thema-wisseling."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Heb je een project in gedachten? Ik hoor er graag over. Laten we samen iets geweldigs bouwen.",
+    "form": {
+      "name": "Naam",
+      "name_placeholder": "Jouw naam",
+      "email": "E-mail",
+      "email_placeholder": "jouw@email.com",
+      "message": "Bericht",
+      "message_placeholder": "Vertel me over je project…",
+      "send": "Verstuur Bericht",
+      "success": "Bedankt! Je bericht is verzonden.",
+      "error": "Oeps! Er is iets misgegaan. Probeer opnieuw."
+    }
+  },
+  "footer": {
+    "text": "Gebouwd met ♥ met vanilla HTML, CSS &amp; JavaScript"
+  }
+}

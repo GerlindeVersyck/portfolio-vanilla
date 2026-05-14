@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Gerlinde Versyck – Frontend Developer",
+    "description": "Portfolio of Gerlinde Versyck, a passionate frontend developer building responsive, animated web experiences."
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Frontend Developer",
+    "description": "I craft beautiful, responsive web experiences with clean code and thoughtful design.",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Get In Touch"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I'm a passionate frontend developer with a love for creating elegant, user-friendly web applications.",
+    "p2": "With experience in modern web technologies, I focus on delivering high-quality, performant solutions that delight users.",
+    "location": "Location",
+    "availability": "Availability",
+    "available": "Open to work",
+    "cta": "Let's talk",
+    "stat": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "clients": "Happy Clients"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "tools": "Tools & Frameworks"
+  },
+  "projects": {
+    "title": "Projects",
+    "demo": "Demo",
+    "code": "Code",
+    "project1": {
+      "title": "Portfolio Site",
+      "desc": "A responsive one-page portfolio built with vanilla HTML, CSS and JavaScript, featuring animations and i18n support."
+    },
+    "project2": {
+      "title": "Weather App",
+      "desc": "An interactive weather dashboard that fetches live data from a public API and displays animated forecasts."
+    },
+    "project3": {
+      "title": "Task Manager",
+      "desc": "A feature-rich task management app with drag-and-drop, local storage persistence and theme switching."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Have a project in mind? I'd love to hear about it. Let's build something great together.",
+    "form": {
+      "name": "Name",
+      "name_placeholder": "Your name",
+      "email": "Email",
+      "email_placeholder": "your@email.com",
+      "message": "Message",
+      "message_placeholder": "Tell me about your project…",
+      "send": "Send Message",
+      "success": "Thanks! Your message has been sent.",
+      "error": "Oops! Something went wrong. Please try again."
+    }
+  },
+  "footer": {
+    "text": "Built with ♥ using vanilla HTML, CSS &amp; JavaScript"
+  }
+}

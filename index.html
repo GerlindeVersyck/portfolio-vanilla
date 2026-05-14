@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" data-i18n="meta.description" content="Portfolio of Gerlinde Versyck, a passionate frontend developer building responsive, animated web experiences." />
+  <title>Gerlinde Versyck – Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ================================================================ *
+   * Navigation
+   * ================================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__container">
+      <a href="#home" class="nav__logo" aria-label="Home">GV</a>
+
+      <button
+        class="nav__toggle"
+        id="navToggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="#about"    class="nav__link" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills"   class="nav__link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#contact"  class="nav__link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__lang" role="group" aria-label="Language selection">
+        <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="nl" aria-pressed="false">NL</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================================ *
+   * Hero
+   * ================================================================ -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <div class="hero__container">
+      <div class="hero__content animate-fade-up">
+        <p class="hero__greeting" data-i18n="hero.greeting">Hi, I'm</p>
+        <h1 class="hero__name">Gerlinde Versyck</h1>
+        <p class="hero__role" data-i18n="hero.role">Frontend Developer</p>
+        <p class="hero__description" data-i18n="hero.description">
+          I craft beautiful, responsive web experiences with clean code and thoughtful design.
+        </p>
+        <div class="hero__buttons">
+          <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.projects">View Projects</a>
+          <a href="#contact"  class="btn btn--outline" data-i18n="hero.cta.contact">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero__visual animate-fade-left" aria-hidden="true">
+        <div class="hero__avatar">
+          <div class="hero__avatar-inner">GV</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ================================================================ *
+   * About
+   * ================================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section__title" data-i18n="about.title">About Me</h2>
+
+      <div class="about__content">
+        <div class="about__text animate-on-scroll">
+          <p data-i18n="about.p1">
+            I'm a passionate frontend developer with a love for creating elegant,
+            user-friendly web applications.
+          </p>
+          <p data-i18n="about.p2">
+            With experience in modern web technologies, I focus on delivering
+            high-quality, performant solutions that delight users.
+          </p>
+
+          <div class="about__info">
+            <div class="about__info-item">
+              <span class="about__info-label" data-i18n="about.location">Location</span>
+              <span>Belgium</span>
+            </div>
+            <div class="about__info-item">
+              <span class="about__info-label" data-i18n="about.availability">Availability</span>
+              <span data-i18n="about.available">Open to work</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn--primary" data-i18n="about.cta">Let's talk</a>
+        </div>
+
+        <div class="about__stats animate-on-scroll">
+          <div class="stat">
+            <span class="stat__number" data-target="3">0</span>
+            <span class="stat__label" data-i18n="about.stat.experience">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-target="20">0</span>
+            <span class="stat__label" data-i18n="about.stat.projects">Projects Completed</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-target="10">0</span>
+            <span class="stat__label" data-i18n="about.stat.clients">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ *
+   * Skills
+   * ================================================================ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section__title" data-i18n="skills.title">Skills</h2>
+
+      <div class="skills__grid">
+        <!-- Frontend skills -->
+        <div class="skill-card animate-on-scroll">
+          <h3 class="skill-card__title" data-i18n="skills.frontend">Frontend</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__item">
+              <div class="skill-bar__info">
+                <span>HTML5</span><span>95%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar__item">
+              <div class="skill-bar__info">
+                <span>CSS3</span><span>90%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar__item">
+              <div class="skill-bar__info">
+                <span>JavaScript</span><span>85%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Frameworks -->
+        <div class="skill-card animate-on-scroll">
+          <h3 class="skill-card__title" data-i18n="skills.tools">Tools &amp; Frameworks</h3>
+          <div class="skill-bar">
+            <div class="skill-bar__item">
+              <div class="skill-bar__info">
+                <span>React</span><span>80%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar__item">
+              <div class="skill-bar__info">
+                <span>Git</span><span>85%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar__item">
+              <div class="skill-bar__info">
+                <span>Figma</span><span>75%</span>
+              </div>
+              <div class="skill-bar__track">
+                <div class="skill-bar__fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ *
+   * Projects
+   * ================================================================ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section__title" data-i18n="projects.title">Projects</h2>
+
+      <div class="projects__grid">
+        <article class="project-card animate-on-scroll">
+          <div class="project-card__image" aria-hidden="true">
+            <div class="project-card__placeholder">01</div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title" data-i18n="projects.project1.title">Portfolio Site</h3>
+            <p class="project-card__desc" data-i18n="projects.project1.desc">
+              A responsive one-page portfolio built with vanilla HTML, CSS and JavaScript,
+              featuring animations and i18n support.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm btn--primary" data-i18n="projects.demo">Demo</a>
+              <a href="#" class="btn btn--sm btn--outline" data-i18n="projects.code">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card animate-on-scroll">
+          <div class="project-card__image" aria-hidden="true">
+            <div class="project-card__placeholder">02</div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title" data-i18n="projects.project2.title">Weather App</h3>
+            <p class="project-card__desc" data-i18n="projects.project2.desc">
+              An interactive weather dashboard that fetches live data from a public API
+              and displays animated forecasts.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm btn--primary" data-i18n="projects.demo">Demo</a>
+              <a href="#" class="btn btn--sm btn--outline" data-i18n="projects.code">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card animate-on-scroll">
+          <div class="project-card__image" aria-hidden="true">
+            <div class="project-card__placeholder">03</div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title" data-i18n="projects.project3.title">Task Manager</h3>
+            <p class="project-card__desc" data-i18n="projects.project3.desc">
+              A feature-rich task management app with drag-and-drop, local storage
+              persistence and theme switching.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm btn--primary" data-i18n="projects.demo">Demo</a>
+              <a href="#" class="btn btn--sm btn--outline" data-i18n="projects.code">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ *
+   * Contact
+   * ================================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section__title" data-i18n="contact.title">Contact</h2>
+
+      <div class="contact__content">
+        <div class="contact__info animate-on-scroll">
+          <p data-i18n="contact.description">
+            Have a project in mind? I'd love to hear about it.
+            Let's build something great together.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:hello@gerlindeversyck.dev" class="contact__link">
+              <span class="contact__icon" aria-hidden="true">✉</span>
+              hello@gerlindeversyck.dev
+            </a>
+            <a
+              href="https://github.com/GerlindeVersyck"
+              class="contact__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact__icon" aria-hidden="true">⌥</span>
+              github.com/GerlindeVersyck
+            </a>
+          </div>
+        </div>
+
+        <form class="contact__form animate-on-scroll" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name" data-i18n="contact.form.name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              autocomplete="name"
+              data-i18n-placeholder="contact.form.name_placeholder"
+              placeholder="Your name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="contact.form.email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              data-i18n-placeholder="contact.form.email_placeholder"
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="contact.form.message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              data-i18n-placeholder="contact.form.message_placeholder"
+              placeholder="Tell me about your project…"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="contact.form.send">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ *
+   * Footer
+   * ================================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer__text" data-i18n="footer.text">
+        Built with ♥ using vanilla HTML, CSS &amp; JavaScript
+      </p>
+      <p class="footer__copy">© 2024 Gerlinde Versyck</p>
+    </div>
+  </footer>
+
+  <!-- Scripts (i18n must be loaded before main so `i18n` is in scope) -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
